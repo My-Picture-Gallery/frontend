@@ -1,1 +1,7 @@
 @import 'bulma';
+
+$font: 'Lato', sans-serif;
+
+* {
+  font-family: $font;
+}
