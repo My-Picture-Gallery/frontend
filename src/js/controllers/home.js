@@ -6,7 +6,9 @@ function HomeController ($scope, $http, $state) {
 	  	console.log("Success: In the HomeController")
 	    
 	    $http.get(SERVER).then((response) => {
+
 	      console.log('Gallery data -->', response)
+
 	    });
 	  }
 
