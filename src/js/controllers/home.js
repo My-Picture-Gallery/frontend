@@ -1,13 +1,12 @@
 import { SERVER }from '../server';
 
-function HomeController ($scope, $http) {
-  $scope.pics = [];
+function HomeController ($scope, $http, $state) {
 
 	  function init() {
 	  	console.log("Success: In the HomeController")
 	    
 	    $http.get(SERVER).then((response) => {
-	      $scope.pics = response.data;
+	      console.log('Gallery data -->', response)
 	    });
 	  }
 
@@ -15,5 +14,5 @@ function HomeController ($scope, $http) {
 
 }; 
 
-HomeController.$inject = ['$scope', '$http'];
+HomeController.$inject = ['$scope', '$http', '$state'];
 export { HomeController };
