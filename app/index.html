@@ -9,17 +9,10 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body ng-app="app">
-    <div class="container">
 
       <nav class="nav">
       <!-- FOR MORE INFO ON NAV SECTION: http://bulma.io/documentation/components/nav/ -->
         <div class="nav-left">
-          <a class="nav-item is-brand" href="#">
-            <img src="../images/camera-icon-blue.png" alt="Gallery logo">
-          </a>
-        </div>
-
-        <div class="nav-center">
           <a class="nav-item" href="#">
             <span class="icon">
               <i class="fa fa-github"></i>
@@ -32,6 +25,12 @@
           </a>
         </div>
 
+        <div class="nav-center">
+          <a class="nav-item is-brand" href="#">
+            <img src="../images/camera-icon-blue.png" alt="Gallery logo">
+          </a>
+        </div>
+
         <span class="nav-toggle">
           <span></span>
           <span></span>
@@ -39,14 +38,14 @@
         </span>
 
         <div class="nav-right nav-menu">
-          <a class="nav-item" href="#">
+          <a class="nav-item" href="#/home">
             Home
           </a>
-          <a class="nav-item" href="#">
-            Documentation
+          <a class="nav-item" href="#/team">
+            Team
           </a>
-          <a class="nav-item" href="#">
-            Blog
+          <a class="nav-item" href="#/detail/:id">
+            Detail
           </a>
 
           <span class="nav-item">
@@ -56,19 +55,20 @@
               </span>
               <span>Tweet</span>
             </a>
-            <a class="button is-primary" href="#">
+            <a class="button is-primary" href="#/add">
               <span class="icon">
                 <i class="fa fa-download"></i>
               </span>
-              <span>Download</span>
+              <span>Add Pic</span>
             </a>
           </span>
 
         </div>
-
       </nav>
 
+    <div class="container" ui-view>
     </div>
+
     <script src="js/bundle.js"></script>
   </body>
 </html>
