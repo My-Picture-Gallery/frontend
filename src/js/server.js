@@ -1,3 +1,3 @@
-const SERVER = 'https://boiling-spring.57482.herokuapp.com/';
+const SERVER = 'https://boiling-spring-57482.herokuapp.com/';
 
 export { SERVER };
