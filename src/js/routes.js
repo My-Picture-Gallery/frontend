@@ -1,7 +1,7 @@
-function routerConfig ($stateProvider) {
+function routerConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
-      url: '/home',
+      url: '/',
       templateUrl: 'templates/home.tpl.html',
       controller: 'HomeController'
     })
@@ -20,9 +20,9 @@ function routerConfig ($stateProvider) {
       template: '<h1>This is the detailed View</h1>'
     });
 
-  // $urlRouterProvider.otherwise('/');  
+  $urlRouterProvider.otherwise('/');  
 
 }
 
-routerConfig.$inject = ['$stateProvider'];
+routerConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
 export { routerConfig };
