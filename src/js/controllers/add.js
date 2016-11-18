@@ -5,13 +5,15 @@ function AddController ($scope, $http) {
 
 	  function init() {
 	  	console.log("Success: In the AddController")
-	    
-	    // $http.get(SERVER).then((response) => {
-	    //   $scope.pics = response.data;
-	    // });
 	  }
 
 	  init();
+
+	  * create(request, response){
+	  	//grab url and caption
+	  	//post to server
+	  	//response?
+	  }
 
 }; 
 
