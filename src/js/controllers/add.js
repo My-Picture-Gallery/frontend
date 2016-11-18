@@ -11,7 +11,7 @@ function AddController ($scope, $http, $state) {
 	  init();
 
 	  $scope.addPicture = (picture) => {
-    	$http.post('SERVER', picture).then((response) => {
+    	$http.post(SERVER, picture).then((response) => {
     	console.log('Uploaded successful -->', response); 
       	$state.go('home');
       });
