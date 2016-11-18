@@ -1,7 +1,6 @@
 import { SERVER } from '../server';
 
 function HomeController ($scope, $http, $state) {
-  // $scope.pics = [];
 
 	  function init() {
 	  	console.log("Success: In the HomeController")
