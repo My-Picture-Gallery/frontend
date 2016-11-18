@@ -3,6 +3,16 @@
 
 $font: 'Lato', sans-serif;
 
-* {
+*{
   font-family: $font;
+}
+
+.container{
+	max-width: 500px;
+	margin: 25px auto;
+}
+
+li{
+	max-width: 300px;
+	margin: 5px;
 }
