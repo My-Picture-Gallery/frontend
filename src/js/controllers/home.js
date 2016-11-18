@@ -1,14 +1,14 @@
-import SERVER from '../server';
+import { SERVER }from '../server';
 
 function HomeController ($scope, $http) {
-  // $scope.pics = [];
+  $scope.pics = [];
 
 	  function init() {
 	  	console.log("Success: In the HomeController")
 	    
-	    // $http.get(SERVER).then((response) => {
-	    //   $scope.pics = response.data;
-	    // });
+	    $http.get(SERVER).then((response) => {
+	      $scope.pics = response.data;
+	    });
 	  }
 
 	  init();
