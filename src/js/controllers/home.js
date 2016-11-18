@@ -1,4 +1,4 @@
-import { SERVER }from '../server';
+import { SERVER } from '../server';
 
 function HomeController ($scope, $http) {
   $scope.pics = [];
@@ -8,6 +8,7 @@ function HomeController ($scope, $http) {
 	    
 	    $http.get(SERVER).then((response) => {
 	      $scope.pics = response.data;
+        console.log(response.data);
 	    });
 	  }
 
