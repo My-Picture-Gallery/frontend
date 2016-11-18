@@ -7,7 +7,8 @@ function routerConfig ($stateProvider) {
     })
     .state('add', {
       url: '/add',
-      template: '<h1>Add View (Temporary)</h1>',
+      // template: '<h1>Add View (Temporary)</h1>',
+      templateUrl: 'templates/add.tpl.html',
       controller: 'AddController'
     })
     .state('team', {
