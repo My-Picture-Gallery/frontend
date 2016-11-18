@@ -1,10 +1,10 @@
 import SERVER from '../server';
 
-function HomeController ($scope, $http) {
+function DetailController ($scope, $http) {
   // $scope.pics = [];
 
 	  function init() {
-	  	console.log("Success: In the HomeController")
+	  	console.log("Success: In the DetailController")
 	    
 	    // $http.get(SERVER).then((response) => {
 	    //   $scope.pics = response.data;
@@ -15,5 +15,5 @@ function HomeController ($scope, $http) {
 
 }; 
 
-HomeController.$inject = ['$scope', '$http'];
-export { HomeController };
+DetailController.$inject = ['$scope', '$http'];
+export { DetailController };
