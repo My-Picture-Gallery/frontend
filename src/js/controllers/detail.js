@@ -1,19 +1,22 @@
 import { SERVER } from '../server';
 
-function DetailController ($scope, $http) {
-  // $scope.pics = [];
+function DetailController ($scope, $http, $stateParams) {
+  $scope.pic = {};
 
 	  function init() {
 	  	console.log("Success: In the DetailController")
-	    
-	    // $http.get(SERVER).then((response) => {
-	    //   $scope.pics = response.data;
-	    // });
+      let url = SERVER + $stateParams.id;
+      
+      $http.get(url).then((response) => {
+	      $scope.pic = response.data;
+        console.log(url);
+        // console.log(response.data);
+	    });
 	  }
 
 	  init();
 
 }; 
 
-DetailController.$inject = ['$scope', '$http'];
+DetailController.$inject = ['$scope', '$http', '$stateParams'];
 export { DetailController };

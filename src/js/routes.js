@@ -14,7 +14,8 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
     })
 
     .state('detail', {
-      url: '/detail/:id',
+      //nested state url : remove the initial / 
+      url: '/detail/:id', 
       templateUrl: 'templates/detail.tpl.html', 
       controller: 'DetailController'
     });
