@@ -3,12 +3,14 @@
 <div class = "container">
 	
 	<ul class="gallery">
-	  <li>
-	    <img src="http://www.clipartbest.com/cliparts/KTn/o5k/KTno5kkjc.png" alt="Cartoon turtle">
-	    <p class="description">
-	      This is an image of a cartoon turtle.
-	    </p>
+	  <li ng-repeat="picture in pictures">
+	    <!-- <a href=" "> -->
+		    <img ng-src='{{ picture.url }}' />
+		    <h3>{{ picture.description }}</h3>
+	    <!-- </a> -->
 	  </li>
 	</ul>
+
+	<div ui-view></div>
 
 </div>
