@@ -10,6 +10,7 @@ function HomeController ($scope, $http, $state) {
 			console.log('Array -->', response.data)
 			$scope.pics = response.data;
 	    });
+      
 	  }
 
 	  init();
