@@ -3,11 +3,11 @@
 <div class = "container">
 	
 	<ul class="gallery">
-	  <li ng-repeat="picture in pictures">
-	    <!-- <a href=" "> -->
-		    <img ng-src='{{ picture.url }}' />
-		    <h3>{{ picture.description }}</h3>
-	    <!-- </a> -->
+	  <li ng-repeat="pic in pics">
+	    <a href="#/detail/{{ pic._id }}">
+		    <img ng-src='{{ pic.url }}' />
+		    <h3>{{ pic.description }}</h3>
+	    </a>
 	  </li>
 	</ul>
 
