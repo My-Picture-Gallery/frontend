@@ -5,11 +5,10 @@ function DetailController ($scope, $http, $stateParams) {
 
 	  function init() {
 	  	console.log("Success: In the DetailController")
-      let url = SERVER + $stateParams.id;
-      
-      $http.get(url).then((response) => {
+
+      $http.get(SERVER + "image/:id").then((response) => {
 	      $scope.pic = response.data;
-        console.log(url);
+        // console.log(url);
         // console.log(response.data);
 	    });
 	  }

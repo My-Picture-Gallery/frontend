@@ -4,7 +4,7 @@
 	
 	<ul class="gallery">
 	  <li ng-repeat="picture in pictures">
-	    <a href="#/detail/{{ pic._id }}">
+	    <a href="#/detail/{{ picture._id }}">
 		    <img ng-src='{{ picture.url }}' />
 		    <h3>{{ picture.description }}</h3>
 	    </a>
