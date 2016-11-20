@@ -43,6 +43,10 @@ $font: 'Lato', sans-serif;
 	margin: 25px 15px;
 	.single-image{
 		position: relative;
+		img{
+			border-radius: 5%;
+			max-height: 200px;
+		}
 		.count{
 			visibility: hidden;
 			position: absolute;
