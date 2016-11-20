@@ -1,8 +1,9 @@
-<h1>Detail View</h1>
-
-<div class="container">
-
-	<img src="{{ pic.url }}" alt="{{ pic.description }}">
-	<p>{{ pic.description }}</p>
+<div class="detail-image-wrapper">
+	
+	<div class="detail-image">
+		<img src="{{ pic.url }}" alt="{{ pic.description }}">
+		<p>{{ pic.description }}</p>
+		<button ng-click="updateLikeCount()">{{ pic.likeCount }}</button>
+	</div>
 
 </div>
