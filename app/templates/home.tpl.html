@@ -2,7 +2,9 @@
   <li class="single-image-wrapper" ng-repeat="pic in pics">
   	<div class="single-image">
 	    <a href="#/detail/{{ pic.id }}">
-		    <img ng-src="{{ pic.url }}" />
+		    <div>
+		    	<img ng-src="{{ pic.url }}" />
+		    </div>
 		    <!-- <h3>{{ pic.description }}</h3> -->
 		    <p class="count">{{ pic.likeCount }}</p>
 	    </a>

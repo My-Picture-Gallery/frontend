@@ -43,9 +43,15 @@ $font: 'Lato', sans-serif;
 	margin: 25px 15px;
 	.single-image{
 		position: relative;
-		img{
+		a{
+			display: flex; 
+			justify-content: center;
+			align-items: center; 
+			img{
 			border-radius: 5%;
 			max-height: 200px;
+			max-width: 250px;
+			}
 		}
 		.count{
 			visibility: hidden;
