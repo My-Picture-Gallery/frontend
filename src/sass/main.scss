@@ -8,13 +8,28 @@ $font: 'Lato', sans-serif;
 }
 
 .container{
-	// border: 2px solid blue;
 	max-width: 900px;
 	margin: 25px auto;
 }
 
-// ***** Gallery view *****
+// ***** Nav bar *****
+.nav-bar{
+	width: 800px;
+	margin: 0 auto;
+	.nav-item-custom{
+		width: 250px;
+		margin: 0 auto;
+		span.nav-item{
+			margin-bottom: 15px;
+		} 
+	}
+	#title{
+		width: 800px;
+		font-size: 2.5em;
+	}
+}
 
+// ***** Gallery view *****
 .gallery{
 	display: flex;
 	flex-direction: row;
@@ -24,7 +39,6 @@ $font: 'Lato', sans-serif;
 }
 
 .single-image-wrapper{
-	// border: 2px solid black;
 	width: 250px;
 	margin: 25px 15px;
 	.single-image{
@@ -47,7 +61,6 @@ $font: 'Lato', sans-serif;
 }
 
 // ***** Detail view *****
-
 .detail-image-wrapper{
 	.detail-image{ 
 		button{

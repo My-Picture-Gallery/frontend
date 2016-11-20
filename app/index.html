@@ -10,36 +10,29 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body ng-app="app">
-
       <nav class="nav">
-
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        <div class="nav-right nav-menu">
-          
+        <!-- <div class="nav-right nav-menu"> -->
+        <div class="nav-bar">
+          <div class="nav-item-custom" id="title">  
             <a class="nav-item" href="#/">
-              Gallery
+              My Picture Gallery
             </a>
+          </div>
 
-          <span class="nav-item">
-
-            <a class="button is-primary" href="#/add">
-              <span class="icon">
-                <i class="fa fa-download"></i>
-              </span>
-              <span>Add Pic</span>
-            </a>
-          </span>
-
+          <div class="nav-item-custom">
+            <span class="nav-item">
+              <a class="button is-primary" href="#/add">
+                <span class="icon">
+                  <i class="fa fa-download"></i>
+                </span>
+                <span>Add Pic</span>
+              </a>
+            </span>
+          </div>
         </div>
       </nav>
 
-    <div class="container" ui-view>
-    </div>
+    <div class="container" ui-view></div>
 
     <script src="js/bundle.js"></script>
   </body>
