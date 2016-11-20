@@ -8,11 +8,56 @@ $font: 'Lato', sans-serif;
 }
 
 .container{
-	max-width: 500px;
+	// border: 2px solid blue;
+	max-width: 900px;
 	margin: 25px auto;
 }
 
-li{
-	max-width: 300px;
-	margin: 5px;
+// ***** Gallery view *****
+
+.gallery{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.single-image-wrapper{
+	// border: 2px solid black;
+	width: 250px;
+	margin: 25px 15px;
+	.single-image{
+		position: relative;
+		.count{
+			visibility: hidden;
+			position: absolute;
+			top: 40%;
+			left: 45%;
+		}
+		:hover{
+			.count{
+				visibility: visible;
+				color: darken(white, 10%);
+				font-size: 2em;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+// ***** Detail view *****
+
+.detail-image-wrapper{
+	.detail-image{ 
+		button{
+			font-size: 3em;
+			color: black;
+		}
+		:hover{
+			button{
+				color: red;
+			}
+		}
+	}
 }

@@ -1,14 +1,13 @@
-<h1>My Picture Gallery</h1>
-
-<div class = "container">
-	<ul class="gallery">
-	  <li ng-repeat="pic in pics">
+<ul class="gallery">
+  <li class="single-image-wrapper" ng-repeat="pic in pics">
+  	<div class="single-image">
 	    <a href="#/detail/{{ pic.id }}">
 		    <img ng-src="{{ pic.url }}" />
 		    <h3>{{ pic.description }}</h3>
+		    <p class="count">{{ pic.likeCount }}</p>
 	    </a>
 	    <!-- <button ng-click="updateLikeCount()">{{ pic.likeCount }}</button> -->
-	    <p>{{ pic.likeCount }}</p>
-	  </li>
-	</ul>
-</div>
+	    
+	</div>
+  </li>
+</ul>
