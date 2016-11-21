@@ -1,6 +1,6 @@
 import { SERVER } from '../server';
 
-function DetailController ($scope, $http, $stateParams) {
+function DetailController ($scope, $http, $stateParams, $state) {
     $scope.pic = {};
 
     function init() {
@@ -14,15 +14,14 @@ function DetailController ($scope, $http, $stateParams) {
 	  init();
 
     $scope.updateLikeCount = function(){
-        console.log("Hit the button");
-
         $scope.pic.likeCount += 1;  
 
         $http.put(SERVER + "image/" + $stateParams.id + "/likeCount").then((response) => {
           response.likeCount += 1; 
-        }); 
+          $state.go('home');
+        });  
     };
 }; 
 
-DetailController.$inject = ['$scope', '$http', '$stateParams'];
+DetailController.$inject = ['$scope', '$http', '$stateParams', '$state'];
 export { DetailController };
