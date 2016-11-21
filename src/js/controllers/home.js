@@ -16,10 +16,11 @@ function HomeController ($scope, $http, $state, $stateParams) {
 
 	  // TODO: Update like count
 	  // Problem: How to find image by id?
-	  // $scope.updateLikeCount = function(){
-	  // 	console.log("Hit the button");
-	  // 	console.log($scope.pics); 
-   //    }
+	  $scope.updateLikeCount = function(pic) {
+      $scope.pic.updateLikeCount++;
+	  	console.log("Hit the button");
+	  	console.log($scope.pic); 
+      }
 };
 
 HomeController.$inject = ['$scope', '$http', '$state', '$stateParams'];
