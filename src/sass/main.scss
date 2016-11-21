@@ -72,14 +72,49 @@ $font: 'Lato', sans-serif;
 
 // ***** Detail view *****
 .detail-image-wrapper{
+	// border: 2px solid gray;
 	.detail-image{ 
-		button{
-			font-size: 3em;
-			color: black;
+		max-width: 600px;
+		margin: 0 auto;
+		// border: 2px solid black;
+		.detail-image-flex{
+			display: flex;
+			img{
+				// border: 1px solid pink;
+				max-height: 300px;
+				display: flex; 
+				justify-content: center;
+				align-items: center; 
+				border-radius: 5%;
+				display: inline-block;
+				margin: 0 auto;
+			}
+		}
+		.descr-button-flex{
+			// border: 2px dotted orange;
+			max-width: 400px; 
+			margin: 0 auto; 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			p{
+				// border: 2px solid green;
+				max-width: 300px;
+				font-size: 1em;
+				color: gray;
+				margin: 15px;
+			}
+			button{
+				// border: 2px solid green;
+				max-width: 300px;
+				font-size: 1.5em;
+				color: darken(gray, 20%);
+				border-radius: 5%;
+			}
 		}
 		:hover{
 			button{
-				color: red;
+				color: darken(gray, 40%)
 			}
 		}
 	}

@@ -1,9 +1,11 @@
 <div class="detail-image-wrapper">
-	
 	<div class="detail-image">
-		<img src="{{ pic.url }}" alt="{{ pic.description }}">
-		<p>{{ pic.description }}</p>
-		<button ng-click="updateLikeCount()">{{ pic.likeCount }}</button>
+		<div class="detail-image-flex">
+			<img src="{{ pic.url }}" alt="{{ pic.description }}">
+		</div>
+		<div class="descr-button-flex">
+			<p>{{ pic.description }}</p>
+			<button ng-click="updateLikeCount()">{{ pic.likeCount }} likes</button>
+		</div>
 	</div>
-
 </div>
