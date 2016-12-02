@@ -7,6 +7,12 @@ function routerConfig ($stateProvider, $urlRouterProvider) {
       controller: 'HomeController'
     })
 
+    .state('about', {
+      url: '/about',
+      templateUrl: 'templates/about.tpl.html',
+      controller: 'AboutController'
+    })
+
     .state('add', {
       url: '/add',
       templateUrl: 'templates/add.tpl.html',

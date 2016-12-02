@@ -113,3 +113,13 @@ $font: 'Lato', sans-serif;
 		}
 	}
 }
+// ***** Bios view *****
+#bios{
+	border: 1px solid blue;
+	flex: display;
+	flex-direction: column-reverse;
+}
+.child{
+	border: 1px solid red;
+	width: 50%;
+}
